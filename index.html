@@ -114,11 +114,8 @@
     <script>
         document.getElementById("submit").addEventListener("submit", function(event) {
             event.preventDefault();
-            const formData = new FormData(event.target);
-            console.log(formData);
             fetch("https://itskyyy.github.io/Basic-forum/forms/submit.html", {
                 method: "POST",
-                body: formData,
             });
         });
     </script>
